@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/apps/vscode-extension",
+        "--disable-extensions"
+      ],
+      "name": "Launch Extension",
+      "outFiles": [
+        "${workspaceFolder}/apps/vscode-extension/dist/**/*.js"
+      ],
+      "debugWebviews": true,
+      "localRoot": "${workspaceFolder}/apps/vscode-extension",
+      "sourceMapPathOverrides": {
+        "webpack://?:*/*": "${workspaceFolder}/apps/vscode-extension/*"
+      },
+      // "preLaunchTask": "npm",
+      "request": "launch",
+      "type": "extensionHost"
+    }
+  ]
+}
